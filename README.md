@@ -109,7 +109,7 @@ json_db.updateTableContent(TABLE_NAME, PROTECTED_STATUS, SUCCESS_FUNCTION);
 </code>
 
 
-Update table status. This replace old table to JSON_VARIABLE parameter. eg:
+Update table content. This replace old table to JSON_VARIABLE parameter. eg:
 
 json_db.updateTableContent(TABLE_NAME, JSON_VARIABLE, SUCCESS_FUNCTION);
 
