@@ -11,7 +11,7 @@ var json_db = {
 
 		$.ajax({
 			type: "post",
-			url: this.json_db_folder+"json-db.php",
+			url: this.path+"json-db.php",
 			data: { command: "createTable", table:tableName },
 			success: function(data){
 				  success(JSON.parse(data));
@@ -24,7 +24,7 @@ var json_db = {
 
 		$.ajax({
 			type: "post",
-			url: this.json_db_folder+"json-db.php",
+			url: this.path+"json-db.php",
 			data: { command: "createProtectedTable", table:tableName },
 			success: function(data){
 				  success(JSON.parse(data));
@@ -37,7 +37,7 @@ var json_db = {
 
 		$.ajax({
 			type: "post",
-			url: this.json_db_folder+"json-db.php",
+			url: this.path+"json-db.php",
 			data: { command: "updateTable", protected:protected, table:tableName },
 			success: function(data){
 				  success(JSON.parse(data));
@@ -50,7 +50,7 @@ var json_db = {
 
 		$.ajax({
 			type: "post",
-			url: this.json_db_folder+"json-db.php",
+			url: this.path+"json-db.php",
 			data: { command: "updateTableContent", content: content, table:tableName },
 			success: function(data){
 				  success(JSON.parse(data));
@@ -63,7 +63,7 @@ var json_db = {
 
 		$.ajax({
 			type: "post",
-			url: this.json_db_folder+"json-db.php",
+			url: this.path+"json-db.php",
 			data: { command: "removeTable", table:tableName },
 			success: function(data){
 				  success(JSON.parse(data));
@@ -76,7 +76,7 @@ var json_db = {
 
 		$.ajax({
 			type: "post",
-			url: this.json_db_folder+"json-db.php",
+			url: this.path+"json-db.php",
 			data: { command: "getTable", table:tableName },
 			success: function(data){
 				  success(JSON.parse(data));
@@ -89,7 +89,7 @@ var json_db = {
 
 		$.ajax({
 			type: "post",
-			url: this.json_db_folder+"json-db.php",
+			url: this.path+"json-db.php",
 			data: { command: "getTables" },
 			success: function(data){
 				  success(JSON.parse(data));
@@ -102,7 +102,7 @@ var json_db = {
 
 		$.ajax({
 			type: "post",
-			url: this.json_db_folder+"json-db.php",
+			url: this.path+"json-db.php",
 			data: { command: "getItem", table:tableName, index:itemIndex },
 			success: function(data){
 				  success(JSON.parse(data));
@@ -115,7 +115,7 @@ var json_db = {
 
 		$.ajax({
 			type: "post",
-			url: this.json_db_folder+"json-db.php",
+			url: this.path+"json-db.php",
 			data: { command: "editItem", table:tableName, index:itemIndex, item: JSON.stringify(item) },
 			success: function(data){
 				  success(JSON.parse(data));
@@ -128,7 +128,7 @@ var json_db = {
 
 		$.ajax({
 			type: "post",
-			url: this.json_db_folder+"json-db.php",
+			url: this.path+"json-db.php",
 			data: { command: "addItem", table:tableName, item: JSON.stringify(item) },
 			success: function(data){
 				  success(JSON.parse(data));
