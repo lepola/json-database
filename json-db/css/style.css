@@ -1,0 +1,57 @@
+.overflow-auto{
+	overflow-y: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+ 	h2, #project_name{
+		font-size: 20px !important;
+	} 
+
+	h3{
+		font-size: 20px !important;
+	}
+
+	h1{
+		font-size: 20px !important;
+	}
+
+	.page{
+		padding: 0.01em 0px !important;
+	}
+}
+
+
+.code-mark:before{
+	content:"PROJECT DETAILS";
+	font-family: "Courier New", monospace;
+	font-weight: bold;
+	font-size: 20px;
+	color: black;
+	border-bottom: 1px solid black;
+	padding: 3px 14px;
+	position: relative;
+}
+
+.courier{
+	font-family: "Courier New", monospace;
+}
+
+
+.tag{
+	font-size: 9px;
+	padding: 1px 3px;
+	margin-right: 3px;
+	font-style: normal;
+	border-radius: 2px;
+}
+
+
+.fixed-dialog{
+	position: fixed;
+	max-width: 800px;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
