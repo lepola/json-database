@@ -19,6 +19,8 @@ Requires JQuery, PHP.
 
 4. After this you can edit tables with Javascript using <b>json-db/json-db.js</b>.
 
+5. <b>json-db/index.php</b> is simple adminpanel for db.
+
 
 # PHP functions
 
